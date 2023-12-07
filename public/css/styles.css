@@ -1,0 +1,180 @@
+@media screen and (max-width: 310px) {
+    /* Styles for screens 767px and smaller */
+    #header {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+        margin-bottom: 10px; /* Add some spacing between links */
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    #logo {
+        width: 20%;
+    }
+    span.fs-4 {
+        width: 100%;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    #submitButton {
+        padding: 0px; /* Adjust padding for smaller screens */
+        font-size: 0.8rem;
+    }
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px; /* Adjust margin as needed */
+    margin-bottom: 0; /* Remove margin for medium and larger screens */
+    text-decoration: none;
+    color: #007bff; /* Adjust link color as needed */
+}
+
+#logo {
+    margin-right: 10px; /* Adjust margin as needed */
+    padding-right: 10px;
+    width: auto;
+    height: 25px;
+}
+
+span.fs-4 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: black;
+}
+
+body {
+    background-color: bisque;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+body:hover {
+    cursor: default;
+}
+
+header {
+    background-color: #dcb084;
+    padding-top: 10px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #dcb084;
+    color: white;
+    padding: 10px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.nav-item {
+    transition: background-color 0.4s ease;
+}
+
+.nav-item:hover {
+    background-color: bisque;
+}
+
+.todoButton {
+    transition: background-color 0.5s ease;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+.okButton {
+    transition: background-color 0.5s ease;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.okButton:hover {
+    background-color: #dcb084;
+}
+
+#submitButton {
+    padding: 6px;
+    background-color: white;
+}
+
+.todoButton:hover {
+    cursor: pointer;
+    background-color: hsl(32, 100%, 80%);
+}
+
+#itemShown {
+    list-style: none;
+}
+
+#header {
+    margin-right: 5px;
+}
+
+#theForm {
+    display: flex;
+    border: 1px solid black;
+    background-color: white;
+}
+
+#listItem {
+    border: none;
+    border-right: 3px solid lightgray;
+}
+
+textarea {
+    resize: none;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    overflow-y: hidden;
+    height: auto;
+}
+
+.listedItems {
+    height: auto;
+    resize: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    word-wrap: break-word;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: white;
+}
+
+.todoItemListButtons {
+    display: flex;
+    border-top: 1px solid lightgray;
+    flex-direction: row;
+}
