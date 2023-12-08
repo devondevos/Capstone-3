@@ -142,6 +142,15 @@ $(document).ready(function () {
         $(this).css('height', 'auto'); // Reset height to auto
         $(this).css('height', this.scrollHeight + 2 + 'px'); // Set height to scrollHeight + some padding
     });
+    const currentPage = window.location.pathname;
+
+    // Add the "active-link" class to the corresponding nav link
+    $('.nav-item a').each((index, element) => {
+        const $link = $(element);
+        if ($link.attr('href') === currentPage) {
+            $link.addClass('active-link');
+        }
+    });
 });
 
 /**
