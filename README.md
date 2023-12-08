@@ -1,5 +1,7 @@
 # Capstone-3
 My Todo List website.
+created using html, css, js (node.js, express, ajax, jquery) and bootstrap
+(the &copy; is not real, I just added it there to look nice)
 
 Where the user can submit data, edit data and delete data and is responsive to screen sizes.
 ![todo list pic1](https://github.com/devondevos/Capstone-3/assets/52822153/296196f1-2cc4-47a4-9924-ce8d05c3f830)
