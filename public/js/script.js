@@ -80,9 +80,9 @@ const removeItem = (index) => {
 const editItem = (index, event) => {
     event.preventDefault();
 
-    // Find the list item and the element containing the text
+    // Find the list item and the element containing the text you want to edit
     const listItemElement = $('#itemShown li').eq(index);
-    const listedItemsElement = listItemElement.children(':first-child'); // Find the first child element
+    const listedItemsElement = listItemElement.children(':first-child'); // Find the first child element of 'said' element
 
     // Get the current text value
     const currentText = listedItemsElement.text().trim();
@@ -93,7 +93,7 @@ const editItem = (index, event) => {
     // Create an "OK" button
     const okButton = $('<button>', { text: 'OK', class: 'okButton' });
 
-    // Replace the text with the input field and add the "OK" button
+    // Replace the text with a empty input field and add the "OK" button
     listedItemsElement.empty().append(inputField).append(okButton);
 
     // Focus on the input field for a better user experience
@@ -119,9 +119,9 @@ const editItem = (index, event) => {
             $.ajax({
                 url: '/editItem',
                 method: 'PUT',
-                data: { index: index, updatedItem: updatedItem },
+                data: { index: index, updatedItem: updatedItem }, //index is the number of the item in the array, updatedItem is what you changed it to, saving it to data to be called in the success function
                 success: function (data) {
-                    // Handle success, e.g., update the UI with the new todoArray
+                    // Handle success, e.g., update the UI with the new todoArray, stored in data
                     displayValues(data.values);
                 },
                 error: function (error) {
@@ -137,18 +137,20 @@ const editItem = (index, event) => {
 };
 
 
-$(document).ready(function () {
+$(document).ready(function () { //just here to make sure that there is no errors or delayed responses ot the layout
     $('#listItem').on('input', function () {
         $(this).css('height', 'auto'); // Reset height to auto
         $(this).css('height', this.scrollHeight + 2 + 'px'); // Set height to scrollHeight + some padding
     });
-    const currentPage = window.location.pathname;
 
+    //code for the active tab on the header
+    //if the currentPage's link is '/' or'/contact' or '/about' 
+    const currentPage = window.location.pathname;
     // Add the "active-link" class to the corresponding nav link
     $('.nav-item a').each((index, element) => {
-        const $link = $(element);
-        if ($link.attr('href') === currentPage) {
-            $link.addClass('active-link');
+        const $link = $(element); //creates a jquery object, and stores it in a seperate variable, it can work if you emit it completely
+        if ($link.attr('href') === currentPage) { //if the headers tab option link is the same to the currentPage
+            $link.addClass('active-link'); //add the class, that adds styling
         }
     });
 });
