@@ -137,7 +137,7 @@ const editItem = (index, event) => {
 };
 
 
-$(document).ready(function () { //just here to make sure that there is no errors or delayed responses ot the layout
+$(document).ready(function () { //just here to make sure that there is no errors or delayed responses with the layout
     $('#listItem').on('input', function () {
         $(this).css('height', 'auto'); // Reset height to auto
         $(this).css('height', this.scrollHeight + 2 + 'px'); // Set height to scrollHeight + some padding
@@ -148,7 +148,7 @@ $(document).ready(function () { //just here to make sure that there is no errors
     const currentPage = window.location.pathname;
     // Add the "active-link" class to the corresponding nav link
     $('.nav-item a').each((index, element) => {
-        const $link = $(element); //creates a jquery object, and stores it in a seperate variable, it can work if you emit it completely
+        const $link = $(element); //creates a 'jquery variable', and stores it in the seperate variable, it can work if you omit it completely
         if ($link.attr('href') === currentPage) { //if the headers tab option link is the same to the currentPage
             $link.addClass('active-link'); //add the class, that adds styling
         }
