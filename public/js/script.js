@@ -143,14 +143,15 @@ $(document).ready(function () { //just here to make sure that there is no errors
         $(this).css('height', this.scrollHeight + 2 + 'px'); // Set height to scrollHeight + some padding
     });
 
-    //code for the active tab on the header
-    //if the currentPage's link is '/' or'/contact' or '/about' 
+    // Code for the active tab on the header
+    // If the currentPage's link is '/' or '/contact' or '/about'
     const currentPage = window.location.pathname;
+
     // Add the "active-link" class to the corresponding nav link
-    $('.nav-item a').each((element) => {
-        const $link = $(element); //creates a jquery object, and stores it in a seperate variable, it can work if you omit it completely
-        if ($link.attr('href') === currentPage) { //if the headers tab option link is the same to the currentPage
-            $link.addClass('active-link'); //add the class, that adds styling
+    $('.nav-item a').each((index, element) => {
+        const $link = $(element);
+        if ($link.attr('href') === currentPage) { //find which page is open
+            $link.addClass('active-link'); //and add the class with the 'nav-item' styles
         }
     });
 });
