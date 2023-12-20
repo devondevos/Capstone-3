@@ -1,6 +1,7 @@
 # Capstone-3
-My Todo List website. 
-Created using html, css, js (node.js, express, ajax, jquery) and bootstrap, (the &copy; is not legit, I just added it there to look nice).
+My Todo List website.
+
+Created using html, css, js (node.js, express, ajax, jquery) and bootstrap (the &copy; is not legit, I just added it there to look nice).
 
 The 'Contact' and 'About' pages are empty because I intend to reuse it later.
 
