@@ -147,8 +147,8 @@ $(document).ready(function () { //just here to make sure that there is no errors
     //if the currentPage's link is '/' or'/contact' or '/about' 
     const currentPage = window.location.pathname;
     // Add the "active-link" class to the corresponding nav link
-    $('.nav-item a').each((index, element) => {
-        const $link = $(element); //creates a 'jquery variable', and stores it in the seperate variable, it can work if you omit it completely
+    $('.nav-item a').each((element) => {
+        const $link = $(element); //creates a jquery object, and stores it in a seperate variable, it can work if you omit it completely
         if ($link.attr('href') === currentPage) { //if the headers tab option link is the same to the currentPage
             $link.addClass('active-link'); //add the class, that adds styling
         }
