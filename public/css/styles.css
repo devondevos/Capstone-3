@@ -171,7 +171,7 @@ textarea {
     header, footer {
         background-color: #404040;
     }
-    span.fs-4 {
+    .word {
         color: white;
     }
     .nav-link {
