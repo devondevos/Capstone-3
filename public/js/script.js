@@ -154,6 +154,21 @@ $(document).ready(function () { //just here to make sure that there is no errors
             $link.addClass('active-link'); //and add the class with the 'nav-item' styles
         }
     });
+    
+    // Detect dark mode status on page load
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        $('body').addClass('dark-mode');
+    }
+  
+    // Handle dark mode toggle
+    $('#dark-mode-toggle').on('click', function () {
+        // Toggle dark mode status
+        const isDarkModeEnabled = $('body').hasClass('dark-mode');
+        $('body').toggleClass('dark-mode');
+  
+        // Update local storage with user's preference
+        localStorage.setItem('dark-mode', isDarkModeEnabled ? 'disabled' : 'enabled');
+    });
 });
 
 /**
