@@ -165,7 +165,6 @@ textarea {
 
 .todoItemListButtons {
     display: flex;
-    border-top: 1px solid lightgray;
     flex-direction: row;
 }
 
