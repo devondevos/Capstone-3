@@ -5,7 +5,7 @@ Created using html, css, js (node.js, express, ajax, jquery) and bootstrap (the 
 
 The 'Contact' and 'About' pages are empty because I intend to reuse it later (also there is dark mode settings, it works on microsoft browser and firefox but is doesn't work on google chrome or the android browser, so i just commented it out).
 
-The url: https://devondevos-capstone-3.cyclic.app/
+The url: 'https://devondevos-capstone-3.cyclic.app/'
 
 To Start:
 - npm install
