@@ -161,9 +161,9 @@ textarea {
     display: flex;
     flex-direction: row;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
-    /* Dark mode styles */
+    / Dark mode styles /
     body {
       background-color: #333333;
       color: white;
@@ -204,7 +204,7 @@ textarea {
     .todoItemListButtons {
         border-top: 1px solid black;
     }
-}
+}*/
 
 @media screen and (max-width: 310px) {
     /* Styles for screens 310px and smaller */
