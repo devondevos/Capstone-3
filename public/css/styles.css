@@ -40,16 +40,10 @@ footer {
     justify-content: flex-end;
 }
 
-#logo {
-    margin-right: 7px; /* Adjust margin as needed */
-    padding-right: 7px;
-    width: auto;
-    height: 20px;
-}
-
-span.fs-4 {
-    font-size: 1.5rem; /* Adjust font size as needed */
-    color: black;
+.word {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: white;
+    padding-left: 7px;
 }
 
 .nav-link {
