@@ -1,56 +1,3 @@
-@media screen and (max-width: 310px) {
-    /* Styles for screens 310px and smaller */
-    #header {
-        display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center-align text */
-        margin-bottom: 10px; /* Add some spacing between links */
-    }
-    h1 {
-        font-size: 1.2rem;
-    }
-    #logo {
-        width: 20%;
-    }
-    span.fs-4 {
-        width: 100%;
-    }
-    .nav-item {
-        width: 100%;
-    }
-    #submitButton {
-        padding: 0px; /* Adjust padding for smaller screens */
-        font-size: 0.8rem;
-    }
-}
-
-/* styles for normal/regular sized screens */
-#header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3px; /* Adjust margin as needed */
-    text-decoration: none;
-    color: #007bff; /* Adjust link color as needed */
-}
-
-.nav-pills {
-    justify-content: flex-end;
-}
-
-
-#logo {
-    margin-right: 10px; /* Adjust margin as needed */
-    padding-right: 10px;
-    width: auto;
-    height: 25px;
-}
-
-span.fs-4 {
-    font-size: 1.5rem; /* Adjust font size as needed */
-    color: black;
-}
-
 body {
     background-color: bisque;
     font-size: 1rem;
@@ -78,6 +25,31 @@ footer {
     background-color: #dcb084;
     color: white;
     padding: 10px;
+}
+
+
+/* styles for normal/regular sized screens */
+#header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adjust margin as needed */
+    text-decoration: none;
+}
+
+.nav-pills {
+    justify-content: flex-end;
+}
+
+#logo {
+    margin-right: 7px; /* Adjust margin as needed */
+    padding-right: 7px;
+    width: auto;
+    height: 20px;
+}
+
+span.fs-4 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: black;
 }
 
 .nav-link {
@@ -195,4 +167,80 @@ textarea {
     display: flex;
     border-top: 1px solid lightgray;
     flex-direction: row;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles */
+    body {
+      background-color: #333333;
+      color: white;
+    }
+    header, footer {
+        background-color: #404040;
+    }
+    span.fs-4 {
+        color: white;
+    }
+    .nav-link {
+        color: white;
+    }
+    .nav-link:hover {
+        color: white;
+    }
+    .nav-item:active,
+    .active-link {
+        background-color: #6C6C6C;
+    }
+    .nav-item:hover, .todoButton:hover, .okButton:hover {
+        background-color: #6C6C6C;
+    }
+    #theForm, #listItem, #submitButton, .listedItems, .editInput, .okButton {
+        background-color: inherit;
+        color: inherit;
+    }
+    #theForm, .todoItemList {
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    #listItem {
+        border-right: 3px solid black;
+    }
+    .todoItemList {
+        padding: 6px;
+    }
+    .todoItemListButtons {
+        border-top: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    /* Styles for screens 310px and smaller */
+    #header {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+        margin-bottom: 10px; /* Add some spacing between links */
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    #logo {
+        width: 20%;
+    }
+    span.fs-4 {
+        width: 100%;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    #submitButton {
+        padding: 0px; /* Adjust padding for smaller screens */
+        font-size: 0.8rem;
+    }
+}
+
+body.dark-mode {
+    background-color: red;
+    color: green;
 }
