@@ -4,6 +4,7 @@ My Todo List website.
 Created using html, css, js (node.js, express, ajax, jquery) and bootstrap (the &copy; is not legit, I just added it there to look nice).
 
 The 'Contact' and 'About' pages are empty because I intend to reuse it later.
+(also there is dark mode settings, it works on microsoft browser and firefos but is doesn't work on google chrome or android browser, so i just commented it out)
 
 To Start:
 - npm install
